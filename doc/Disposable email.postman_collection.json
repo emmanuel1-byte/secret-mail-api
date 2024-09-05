@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "ed1d2710-7c08-4502-9b46-0f2884e2122b",
+		"name": "Disposable email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32396066"
+	},
+	"item": [
+		{
+			"name": "Generate email address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/disposable-email",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"disposable-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get emails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/disposable-email/emails/?md5Hash=e1c4926960cc668c657202805d8cbc2b",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"disposable-email",
+						"emails",
+						""
+					],
+					"query": [
+						{
+							"key": "md5Hash",
+							"value": "e1c4926960cc668c657202805d8cbc2b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/disposable-email/emails/:messageId",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"disposable-email",
+						"emails",
+						":messageId"
+					],
+					"variable": [
+						{
+							"key": "messageId",
+							"value": "e01bd7cecbc3cb483bf8e4a3ece5aa3b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete message",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/disposable-email/emails/:messageId",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"disposable-email",
+						"emails",
+						":messageId"
+					],
+					"variable": [
+						{
+							"key": "messageId",
+							"value": "e01bd7cecbc3cb483bf8e4a3ece5aa3b"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
