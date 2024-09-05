@@ -1,0 +1,76 @@
+openapi: 3.1.0
+x-stoplight:
+  id: telob95iow389
+info:
+  title: SecretMail
+  version: "1.0"
+  description: "Welcome to SecretMail API the ultimate tool for all your temporary email needs! Whether you want to keep your inbox clean or test your app with disposable emails, we’ve got you covered. Let’s dive into how you can use SecretMail to manage your temporary emails effortlessly."
+  contact:
+    name: Emmanuel
+    email: emmanuelhilary9@gamil.com
+    url: "https://github.com/emmanuel1-byte"
+servers:
+  - url: "http://localhost:3000/api/v1"
+paths:
+  /disposable-email:
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Mail
+      responses:
+        "200":
+          description: OK
+        "500":
+          description: Internal Server Error
+      operationId: get-disposable-email
+      requestBody:
+        content: {}
+  /disposable-email/emails:
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Mail
+      responses:
+        "200":
+          description: OK
+          content: {}
+        "500":
+          description: Internal Server Error
+      operationId: get-disposable-email-emails
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: md5Hash
+          required: true
+  "/disposablle-email/emails/{messageId}":
+    parameters:
+      - schema:
+          type: string
+        name: messageId
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Mail
+      responses:
+        "200":
+          description: OK
+        "500":
+          description: Internal Server Error
+      operationId: get-disposablle-email-emails-messageId
+    delete:
+      summary: ""
+      operationId: delete-disposablle-email-emails-messageId
+      responses:
+        "200":
+          description: OK
+        "500":
+          description: Internal Server Error
+      tags:
+        - Mail
+components:
+  schemas: {}
+tags:
+  - name: Mail
