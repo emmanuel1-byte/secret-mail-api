@@ -34,4 +34,4 @@ Explore our API documentation to discover all the endpoints and parameters avail
 
 ## 🎉 **Get Started Now!**
 
-Ready to take control of your temporary email needs? Head over to [SecretMail API](https://secretmailapi.com) and start using our service today!
+Ready to take control of your temporary email needs? Head over to [SecretMail API](https://secret-mail-api.onrender.com/api-docs/n) and start using our service today!

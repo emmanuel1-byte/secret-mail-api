@@ -10,7 +10,7 @@ info:
     email: emmanuelhilary9@gamil.com
     url: "https://github.com/emmanuel1-byte"
 servers:
-  - url: "http://localhost:3000/api/v1"
+  - url: "https://secret-mail-api.onrender.com/api/v1"
 paths:
   /disposable-email:
     get:
